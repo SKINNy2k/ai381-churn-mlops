@@ -1,5 +1,6 @@
 #test 1
 from fastapi.testclient import TestClient
+
 from src.app.main import app
 
 client = TestClient(app)
@@ -13,6 +14,7 @@ def test_health():
 
 #test 2
 from pathlib import Path
+
 import joblib
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

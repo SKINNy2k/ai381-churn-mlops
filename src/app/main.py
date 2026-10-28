@@ -5,10 +5,12 @@ Run it by hand (this is Round 1 of the race):
 Then send predictions with curl (see sample_request.json).
 """
 from pathlib import Path
-from pydantic import BaseModel
+
 import joblib
 import pandas as pd
 from fastapi import FastAPI
+from pydantic import BaseModel
+
 
 class Customer(BaseModel):
     tenure_months: int
