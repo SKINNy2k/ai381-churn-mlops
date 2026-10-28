@@ -1,0 +1,11 @@
+.venv/
+.venv-fresh/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.ipynb_checkpoints/
+churn_v1.csv
+churn_v2.csv
+lab1_baseline.ipynb
+pain_log_template.txt

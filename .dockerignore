@@ -1,0 +1,8 @@
+
+.venv/
+.venv-fresh/
+__pycache__/
+.pytest_cache/
+.git/
+.ipynb_checkpoints/
+*.pyc
