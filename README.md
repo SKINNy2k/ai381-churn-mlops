@@ -36,3 +36,10 @@ GitHub Actions automatically:
 - Builds the Docker image.
 - Scans the image with Trivy.
 - Pushes the image to GitHub Container Registry (GHCR), tagged with the commit SHA.
+## Project Structure
+
+- `src/` — FastAPI application.
+- `tests/` — Automated tests.
+- `Dockerfile` — Builds the container image.
+- `compose.yaml` — Starts the API using Docker Compose.
+- `model.joblib` — Trained machine learning model.
