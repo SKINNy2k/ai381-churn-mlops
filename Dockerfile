@@ -1,6 +1,6 @@
 
 # Stage 1: Build and install Python dependencies
-FROM python:3.12.10-slim-bookworm AS builder
+FROM python:3.12-slim-bookworm AS builder
 
 WORKDIR /install
 
@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir --prefix=/install/packages \
 
 
 # Stage 2: Final runtime image
-FROM python:3.12.10-slim-bookworm AS runtime
+FROM python:3.12-slim-bookworm AS runtime
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
